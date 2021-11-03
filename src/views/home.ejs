@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Feluslçoca</title>
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/home.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div>
+                <img src="/images/icon-handshake-small.svg" alt="Logo" srcset="">
+                <h1>Feluslçoca</h1>
+            </div>
+            <div>
+                
+                <a href="/perfil/<%= userId %>/">Perfil</a>
+                <a href="/logout">Sair</a>
+            </div>
+        </nav>
+
+        <div class="searchHeader">
+            <h1>Explore pessoas</h1>
+            <div>
+                <form action="/home/search" method="GET">
+                    <input id="nomeDaPessoa" name="nomeDaPessoa" type="text" placeholder="Digite Aqui">
+                    <button type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="cardHolder">
+
+            <% 
+                function idade(nascimento, hoje) {
+                    data = new Date()
+
+                    ano = data.getFullYear()
+                    mes = data.getMonth() + 1
+                    dia = data.getDate()
+
+                    let anoNasc = nascimento.split('-')[0]
+                    let mesNasc = nascimento.split('-')[1]
+                    let diaNasc = nascimento.split('-')[2]    
+
+            return ano - anoNasc
+}
+                
+            %>
+                <% if (!dados) {%>
+                     <div class="card"><h1>Nenhum usuário encontrado com esse nome</h1></div>
+                <% }
+                else { %>
+                    <% dados.forEach(element=> { %>
+                        <div class="card">
+                            <div>
+                                <img src="/images/photo_2020-10-20_20-10-24.jpg" alt="">
+                                <div>
+                                    <h1>
+                                        <%= element.nome %>
+                                    </h1>
+                                    <p>
+                                        <%= element.email %>
+                                    </p>
+                                </div>
+                            </div>
+                            <h1>
+                                <p>
+                                    <%=  idade(element.nascimento) +' anos' %>
+                                </p>
+                            </h1>
+                        </div>
+    
+                        <% }); %>
+                 <% } %>
+          
+
+
+
+        </div>
+</body>
+
+</html>

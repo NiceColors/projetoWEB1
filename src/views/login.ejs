@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Feluslçoca</title>
+    <link rel="stylesheet" href="/style/main.css" />
+    <link rel="stylesheet" href="/style/home.css" />
+    <link rel="stylesheet" href="/style/login.css" />
+  </head>
+  <style>
+    .error-message {
+      font-size: 1.2rem;
+      color: red;
+      margin-bottom: 20px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <nav>
+        <div>
+          <img src="images/icon-handshake-small.svg" alt="Logo" srcset="" />
+          <a href="/"><h1>Feluslçoca</h1></a>
+        </div>
+      </nav>
+      <div class="formWrapper">
+        <div class="loginForm">
+          <div>
+            <div>
+              <h1>Bom dia</h1>
+              <p>Faça login ou crie conta para explorar pessoas</p>
+            </div>
+            <form action="/authenticate" method="POST">
+              <input type="email" name="email" id="email" placeholder="Email" />
+              <span class="error-message">
+                <% if (erros) { %>
+                <span class="error-message"> <%= errosMsg.emailLogin %> </span>
+                <% } %>
+              </span>
+              <input
+                type="password"
+                name="senha"
+                id="senha"
+                placeholder="Senha"
+              />
+              <span class="error-message">
+                <% if (erros) { %>
+                <span class="error-message"> <%= errosMsg.senhaLogin %> </span>
+                <% } %>
+              </span>
+              <button type="submit">Entrar</button>
+            </form>
+          </div>
+          <p>Ainda não tem conta? <a href="cadastro">Cadastre-se</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

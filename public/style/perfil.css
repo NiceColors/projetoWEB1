@@ -1,0 +1,190 @@
+.profileHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px auto;
+  width: 80%;
+}
+
+.profileHeader h1 {
+  font-size: 36px;
+  color: #3D3D4D;
+}
+
+.profileHeader div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profileHeader div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.profileHeader div div h1 {
+  font-size: 36px;
+  color: #3D3D4D;
+}
+
+.profileHeader div div p {
+  font-size: 20px;
+  color: #737380;
+}
+
+.profileHeader div img {
+  width: 120px;
+  height: 120px;
+  margin-right: 24px;
+  border-radius: 50%;
+}
+
+.profileInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profileInfo form {
+  width: 100%;
+}
+
+.profileInfo form > div {
+  height: 112px;
+  width: 80%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px auto;
+}
+
+.profileInfo form > div div {
+  margin: auto 0;
+  margin-left: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profileInfo form > div div h1 {
+  font-size: 18px;
+  font-weight: normal;
+  color: #A8A8B3;
+}
+
+.profileInfo form > div div input {
+  max-width: 600px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid;
+  font-size: 24px;
+  color: #3D3D4D;
+  outline: none;
+}
+
+.profileInfo form > div div p, .profileInfo form > div div input:disabled {
+  font-size: 24px;
+  color: #3D3D4D;
+  font-weight: bold;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.profileInfo form > div button {
+  width: 50px;
+  height: 50px;
+  margin: auto 20px;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.profileInfo form > div button img {
+  width: 15px;
+}
+
+.profileInfo .deleteAccount {
+  width: 169px;
+  height: 50px;
+  border: none;
+  background: #c5294b;
+  border-radius: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 50px 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  float: left;
+  position: relative;
+  margin-left: 190px;
+}
+
+.profileInfo .saveAccount {
+  width: 169px;
+  height: 50px;
+  border: none;
+  background: #56b142;
+  border-radius: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 50px 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  float: right;
+  position: relative;
+  margin-right: 11.5rem;
+}
+/*# sourceMappingURL=perfil.css.map */

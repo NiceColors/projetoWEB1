@@ -1,0 +1,107 @@
+.formWrapper {
+  height: 80vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loginForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginForm > div {
+  width: 650px;
+  height: 470px;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.loginForm > div div {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loginForm > div div h1 {
+  font-size: 48px;
+}
+
+.loginForm > div div p {
+  font-size: 12px;
+}
+
+.loginForm > div div h1, .loginForm > div div p {
+  color: #737373;
+  text-align: center;
+}
+
+.loginForm > div form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.loginForm > div form input, .loginForm > div form button {
+  width: 477px;
+  height: 58px;
+  margin-bottom: 27px;
+  border-radius: 1rem;
+  outline: none;
+  border: 0.5px solid;
+}
+
+.loginForm > div form input {
+  width: calc(417px- 60px);
+  padding: 0  60px;
+}
+
+.loginForm > div form button {
+  border: none;
+  background: #04D361;
+  color: #FFFFFF;
+  font-size: 24px;
+}
+
+.loginForm > p {
+  margin-top: 37px;
+  font-size: 18px;
+}
+
+.loginForm > p a {
+  color: #4676D2;
+}
+/*# sourceMappingURL=login.css.map */
